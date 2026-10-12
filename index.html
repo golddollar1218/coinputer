@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="/coinputer-logo-small.png" />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/953d0668c7d9234b.css"
+      data-precedence="next"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/fc99c8d64092cf78.css"
+      data-precedence="next"
+    />
+    <link
+      rel="preload"
+      as="script"
+      fetchpriority="low"
+      href="/_next/static/chunks/webpack-c31690b855fa5eb4.js"
+    />
+    <script
+      src="/_next/static/chunks/4bd1b696-92152b0f5947070d.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/794-000a715ce19c7a17.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-app-1a6aaf075bf9cd72.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/3a91511d-79b22752a17d215f.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/477-fe762b17dae6d5f4.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/594-7469d4fb8133549b.js"
+      async=""
+    ></script>
+    <script src="/_next/static/chunks/71-17af1f215a63d7a5.js" async=""></script>
+    <script
+      src="/_next/static/chunks/960-9bc2eaa4682290f7.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/289-98acaae1063866fd.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/254-85059ee2340a0c87.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/page-59e156d67a8aa7e6.js"
+      async=""
+    ></script>
+    <title>Coinputer</title>
+    <meta
+      name="description"
+      content="Coinputer mainnet workspace. Read real Solana token and wallet data, and learn how creator fees can fund community computers."
+    />
+    <link rel="shortcut icon" href="/logo.png" />
+    <link rel="icon" href="/logo.png" />
+    <script
+      src="/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      nomodule=""
+    ></script>
+  </head>
+  <body class="antialiased">
+    <div hidden=""><!--$--><!--/$--></div>
+    <main class="coin-app" data-view="launch">
+      <a class="skip-link" href="#workstation-screen">Skip to workstation</a>
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Coinputer home"
+          ><span class="brand-icon"
+            ><img
+              src="/coinputer-logo-small.png"
+              alt=""
+              width="58"
+              height="39"
+              decoding="async"
+            /><span>&gt;_</span></span
+          >Coinputer</a
+        >
+        <nav class="top-actions" aria-label="Quick navigation">
+          <button
+            data-slot="button"
+            data-variant="ghost"
+            data-size="sm"
+            class="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 gap-1.5 rounded-md px-3 has-[&gt;svg]:px-2.5 guide-button"
+          >
+            How it works</button
+          ><button
+            data-slot="button"
+            data-variant="default"
+            data-size="sm"
+            class="inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/90 h-8 gap-1.5 rounded-md px-3 has-[&gt;svg]:px-2.5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wallet"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              ></path>
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg
+            >Connect wallet
+          </button>
+        </nav>
+      </header>
+      <div
+        dir="ltr"
+        data-orientation="vertical"
+        data-slot="tabs"
+        class="group/tabs flex gap-2 data-[orientation=horizontal]:flex-col workspace-tabs"
+      >
+        <div class="workstation-grid">
+          <aside class="workspace-sidebar" aria-label="Coinputer navigation">
+            <a class="brand sidebar-brand" href="/" aria-label="Coinputer home"
+              ><span class="brand-icon"
+                ><img
+                  src="/coinputer-logo-small.png"
+                  alt=""
+                  width="58"
+                  height="39"
+                  decoding="async"
+                /><span>&gt;_</span></span
+              >Coinputer</a
+            >
+            <div
+              role="tablist"
+              aria-orientation="vertical"
+              data-slot="tabs-list"
+              data-variant="default"
+              class="group/tabs-list inline-flex w-fit items-center justify-center rounded-lg p-[3px] text-muted-foreground group-data-[orientation=horizontal]/tabs:h-9 group-data-[orientation=vertical]/tabs:h-fit group-data-[orientation=vertical]/tabs:flex-col data-[variant=line]:rounded-none bg-muted workspace-navigation"
+              aria-label="Main navigation"
+              tabindex="-1"
+              data-orientation="vertical"
+              style="outline: none"
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="radix-_R_4avb_-content-launch"
+                data-state="active"
+                id="radix-_R_4avb_-trigger-launch"
+                data-slot="tabs-trigger"
+                class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100"
+                tabindex="-1"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-rocket"
+                  aria-hidden="true"
+                >
+                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  <path
+                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                  ></path>
+                  <path
+                    d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                  ></path>
+                  <path
+                    d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"
+                  ></path></svg
+                >Launch coin</button
+              ><button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-_R_4avb_-content-machines"
+                data-state="inactive"
+                id="radix-_R_4avb_-trigger-machines"
+                data-slot="tabs-trigger"
+                class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100"
+                tabindex="-1"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-monitor"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                >Computers</button
+              ><button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-_R_4avb_-content-token"
+                data-state="inactive"
+                id="radix-_R_4avb_-trigger-token"
+                data-slot="tabs-trigger"
+                class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100"
+                tabindex="-1"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search"
+                  aria-hidden="true"
+                >
+                  <path d="m21 21-4.34-4.34"></path>
+                  <circle cx="11" cy="11" r="8"></circle></svg
+                >Inspect token
+              </button>
+            </div>
+            <div class="sidebar-tools">
+              <button>How it works</button><button>My wallet</button>
+            </div>
+          </aside>
+          <div class="workspace-center">
+            <div class="crt-machine is-reading">
+              <aside class="monitor-note" aria-hidden="true">
+                Same coins.<br />A brighter<br />internet.
+              </aside>
+              <aside class="monitor-note note-two" aria-hidden="true">
+                Build things<br />that stay.
+              </aside>
+              <div class="bezel-top">
+                <span>COINPUTER / PERSONAL NETWORK TERMINAL</span
+                ><span>MODEL CP—01</span>
+              </div>
+              <div class="crt-recess">
+                <div class="crt-screen" id="workstation-screen" tabindex="-1">
+                  <div class="window-chrome">
+                    <span class="chrome-path"
+                      >COINPUTER OS <small>v0.91</small></span
+                    ><span class="chrome-network"
+                      ><i aria-hidden="true" class="status-dot is-busy"></i
+                      >SOLANA MAINNET</span
+                    ><span class="chrome-right"
+                      >--:--:--<!-- -->
+                      UTC</span
+                    >
+                  </div>
+                  <div class="crt-connection-status" role="status">
+                    <i aria-hidden="true" class="status-dot is-busy"></i
+                    ><span
+                      >&gt;
+                      <!-- -->Connecting to Solana mainnet<span
+                        class="block-cursor"
+                        aria-hidden="true"
+                      ></span></span
+                    ><span class="crt-connection-hint"
+                      >Workspace ready to use</span
+                    >
+                  </div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-overview"
+                    hidden=""
+                    id="radix-_R_4avb_-content-overview"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel overview-screen"
+                    aria-label="Welcome terminal"
+                  ></div>
+                  <div
+                    data-state="active"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-launch"
+                    id="radix-_R_4avb_-content-launch"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel launch-panel"
+                    style="animation-duration: 0s"
+                  >
+                    <div class="launch-layout">
+                      <div class="launch-form-area">
+                        <div class="panel-intro init-intro">
+                          <span class="eyebrow">NEW MACHINE / PUMP.FUN</span>
+                          <h1>YOUR COIN. ITS COMPUTER.</h1>
+                          <p>
+                            Launch on Pump.fun. Creator fees fund its
+                            computer.<span
+                              class="block-cursor"
+                              aria-hidden="true"
+                            ></span>
+                          </p>
+                        </div>
+                        <details
+                          class="computer-launch-note launch-availability"
+                        >
+                          <summary>
+                            <span class="availability-label"
+                              >Checking computer availability…</span
+                            ><span>Details</span>
+                          </summary>
+                          <p>
+                            100% of this coin’s creator-fee portion goes to its
+                            dedicated computer wallet. Pump.fun’s protocol fees
+                            are separate.
+                            <!-- -->Start its server when compute credit is
+                            available and a spending limit is set.
+                            <!-- -->Server rental is awaiting provider approval.<!-- -->
+                            Launching creates the coin and its computer
+                            identity. Starting the server is a separate action.
+                          </p>
+                        </details>
+                        <div class="read-loading" role="status">
+                          <span class="block-cursor" aria-hidden="true"></span
+                          >Reading Pump.fun’s current mainnet launch options…
+                        </div>
+                        <form
+                          id="coinputer-launch-form"
+                          class="launch-form single-launch"
+                          novalidate=""
+                        >
+                          <fieldset>
+                            <div class="single-launch-grid">
+                              <div class="launch-main-fields">
+                                <section class="launch-section">
+                                  <h2>// COIN IDENTITY</h2>
+                                  <div class="identity-row">
+                                    <div class="launch-field">
+                                      <label for="launch-name">Coin name</label
+                                      ><input
+                                        data-slot="input"
+                                        class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                        id="launch-name"
+                                        placeholder="Name your coin"
+                                        maxlength="32"
+                                        required=""
+                                        aria-invalid="false"
+                                        value=""
+                                      />
+                                    </div>
+                                    <div class="launch-field">
+                                      <label for="launch-symbol">Ticker</label
+                                      ><input
+                                        data-slot="input"
+                                        class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                        id="launch-symbol"
+                                        placeholder="TICKER"
+                                        maxlength="13"
+                                        required=""
+                                        aria-invalid="false"
+                                        value=""
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="launch-field">
+                                    <label for="launch-description"
+                                      >Description</label
+                                    ><textarea
+                                      data-slot="textarea"
+                                      class="flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:aria-invalid:ring-destructive/40"
+                                      id="launch-description"
+                                      maxlength="1000"
+                                      placeholder="A coin with a computer. What will yours become?"
+                                      aria-invalid="false"
+                                    ></textarea>
+                                  </div>
+                                  <details class="metadata-details">
+                                    <summary>
+                                      Social links <span>OPTIONAL +</span>
+                                    </summary>
+                                    <div class="form-two">
+                                      <div class="launch-field">
+                                        <label for="launch-twitter"
+                                          >X / Twitter</label
+                                        ><input
+                                          type="url"
+                                          data-slot="input"
+                                          class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                          id="launch-twitter"
+                                          placeholder="https://x.com/…"
+                                          aria-invalid="false"
+                                          value=""
+                                        />
+                                      </div>
+                                      <div class="launch-field">
+                                        <label for="launch-telegram"
+                                          >Telegram</label
+                                        ><input
+                                          type="url"
+                                          data-slot="input"
+                                          class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                          id="launch-telegram"
+                                          placeholder="https://t.me/…"
+                                          aria-invalid="false"
+                                          value=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </details>
+                                </section>
+                                <section class="launch-section">
+                                  <h2>// MARKET &amp; FIRST BUY</h2>
+                                  <div class="form-two">
+                                    <div class="launch-field">
+                                      <label for="launch-pair"
+                                        >Trading pair</label
+                                      ><button
+                                        aria-invalid="false"
+                                        aria-describedby="launch-pair-note"
+                                        id="launch-pair"
+                                        type="button"
+                                        class="pair-select"
+                                        aria-label="Trading pair"
+                                        aria-expanded="false"
+                                        disabled=""
+                                        title="So11111111111111111111111111111111111111112"
+                                        aria-haspopup="dialog"
+                                        data-state="closed"
+                                        data-slot="popover-trigger"
+                                      >
+                                        <span>Reading available pairs…</span
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="14"
+                                          height="14"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-chevrons-up-down"
+                                          aria-hidden="true"
+                                        >
+                                          <path d="m7 15 5 5 5-5"></path>
+                                          <path d="m7 9 5-5 5 5"></path>
+                                        </svg>
+                                      </button>
+                                      <p id="launch-pair-note">
+                                        What people use to buy your coin.
+                                      </p>
+                                    </div>
+                                    <div class="launch-field">
+                                      <label for="launch-buy"
+                                        >Your first buy (SOL)</label
+                                      ><input
+                                        data-slot="input"
+                                        class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+                                        id="launch-buy"
+                                        inputmode="decimal"
+                                        required=""
+                                        aria-invalid="false"
+                                        aria-describedby="launch-buy-note"
+                                        value="0"
+                                      />
+                                      <p id="launch-buy-note">
+                                        Optional. Set 0 to skip.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <p class="launch-consent">
+                                    <strong
+                                      >Coin creation, first buy and computer
+                                      funding in one transaction.</strong
+                                    >
+                                    Coinputer reuses existing network setup
+                                    where available. An exceptional extra setup
+                                    is disclosed before approval. Wallet sign-in
+                                    is separate.
+                                  </p>
+                                  <details
+                                    class="metadata-details advanced-launch"
+                                  >
+                                    <summary>
+                                      Advanced launch options
+                                      <span>OPTIONAL +</span>
+                                    </summary>
+                                    <div class="launch-toggle">
+                                      <div>
+                                        <label for="launch-mayhem"
+                                          >Mayhem mode</label
+                                        >
+                                        <p>
+                                          Pump’s optional Mayhem mode.
+                                          Availability is read from mainnet.
+                                        </p>
+                                      </div>
+                                      <button
+                                        type="button"
+                                        role="switch"
+                                        aria-checked="false"
+                                        data-state="unchecked"
+                                        data-disabled=""
+                                        disabled=""
+                                        value="on"
+                                        data-slot="switch"
+                                        data-size="default"
+                                        class="peer group/switch inline-flex shrink-0 items-center rounded-full border border-transparent shadow-xs transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-[1.15rem] data-[size=default]:w-8 data-[size=sm]:h-3.5 data-[size=sm]:w-6 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input dark:data-[state=unchecked]:bg-input/80"
+                                        id="launch-mayhem"
+                                      >
+                                        <span
+                                          data-state="unchecked"
+                                          data-disabled=""
+                                          data-slot="switch-thumb"
+                                          class="pointer-events-none block rounded-full bg-background ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0 dark:data-[state=checked]:bg-primary-foreground dark:data-[state=unchecked]:bg-foreground"
+                                        ></span></button
+                                      ><input
+                                        type="checkbox"
+                                        aria-hidden="true"
+                                        disabled=""
+                                        tabindex="-1"
+                                        style="
+                                          position: absolute;
+                                          pointer-events: none;
+                                          opacity: 0;
+                                          margin: 0;
+                                          transform: translateX(-100%);
+                                        "
+                                        value="on"
+                                      />
+                                    </div>
+                                    <p class="computer-help">
+                                      Holder rewards and tokenized-agent
+                                      payments are unavailable for launches that
+                                      dedicate creator fees to their computer.
+                                    </p>
+                                  </details>
+                                </section>
+                              </div>
+                              <aside
+                                class="launch-art-panel"
+                                data-expanded="false"
+                                aria-label="Live coin preview"
+                              >
+                                <div class="preview-heading">
+                                  <h2>// YOUR COIN</h2>
+                                  <button
+                                    class="preview-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="coin-preview-controls"
+                                  >
+                                    Add artwork
+                                  </button>
+                                </div>
+                                <section
+                                  class="coin-artwork"
+                                  aria-label="Coin artwork"
+                                >
+                                  <div class="coin-art-preview">
+                                    <div>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-image-plus"
+                                        aria-hidden="true"
+                                      >
+                                        <path d="M16 5h6"></path>
+                                        <path d="M19 2v6"></path>
+                                        <path
+                                          d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"
+                                        ></path>
+                                        <path
+                                          d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
+                                        ></path>
+                                        <circle
+                                          cx="9"
+                                          cy="9"
+                                          r="2"
+                                        ></circle></svg
+                                      ><span>YOUR COIN<br />STARTS HERE</span>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="coin-art-controls"
+                                    id="coin-preview-controls"
+                                  >
+                                    <input
+                                      class="sr-only"
+                                      id="launch-upload-image"
+                                      type="file"
+                                      accept="image/png,image/jpeg,image/webp"
+                                      aria-label="Upload coin image"
+                                    />
+                                    <div class="art-buttons">
+                                      <button
+                                        data-slot="button"
+                                        data-variant="outline"
+                                        data-size="default"
+                                        class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3"
+                                        id="launch-artwork"
+                                        type="button"
+                                        aria-invalid="false"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="15"
+                                          height="15"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-image-plus"
+                                          aria-hidden="true"
+                                        >
+                                          <path d="M16 5h6"></path>
+                                          <path d="M19 2v6"></path>
+                                          <path
+                                            d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"
+                                          ></path>
+                                          <path
+                                            d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
+                                          ></path>
+                                          <circle
+                                            cx="9"
+                                            cy="9"
+                                            r="2"
+                                          ></circle></svg
+                                        >Upload image</button
+                                      ><button
+                                        data-slot="button"
+                                        data-variant="outline"
+                                        data-size="default"
+                                        class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3"
+                                        type="button"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="15"
+                                          height="15"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-shuffle"
+                                          aria-hidden="true"
+                                        >
+                                          <path d="m18 14 4 4-4 4"></path>
+                                          <path d="m18 2 4 4-4 4"></path>
+                                          <path
+                                            d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"
+                                          ></path>
+                                          <path
+                                            d="M2 6h1.972a4 4 0 0 1 3.6 2.2"
+                                          ></path>
+                                          <path
+                                            d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"
+                                          ></path></svg
+                                        >Generate one for me
+                                      </button>
+                                    </div>
+                                    <small
+                                      >PNG, JPEG or WebP · up to 2 MiB</small
+                                    >
+                                  </div>
+                                </section>
+                                <div class="live-coin-name">
+                                  <b
+                                    >Your coin<!-- -->
+                                    <span>(<!-- -->TICKER<!-- -->)</span></b
+                                  >
+                                </div>
+                                <dl class="live-coin-market">
+                                  <div>
+                                    <dt>Trading pair</dt>
+                                    <dd
+                                      title="So11111111111111111111111111111111111111112"
+                                    >
+                                      SOL
+                                    </dd>
+                                  </div>
+                                  <div>
+                                    <dt>First buy</dt>
+                                    <dd>0 SOL</dd>
+                                  </div>
+                                </dl>
+                                <div class="coin-website-note">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-earth"
+                                    aria-hidden="true"
+                                  >
+                                    <path
+                                      d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+                                    ></path>
+                                    <path
+                                      d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+                                    ></path>
+                                    <path
+                                      d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+                                    ></path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                  </svg>
+                                  <div>
+                                    <b>A home on Coinputer.</b>
+                                    <p>
+                                      Your coin page becomes its website
+                                      automatically.
+                                    </p>
+                                  </div>
+                                </div>
+                              </aside>
+                            </div>
+                            <div class="single-launch-footer">
+                              <p class="launch-consent">
+                                100% of the creator-fee portion funds this
+                                computer.<br />Review publishes your image and
+                                details, then shows the exact costs and fee
+                                wallet before signing.
+                              </p>
+                              <button
+                                data-slot="button"
+                                data-variant="default"
+                                data-size="default"
+                                class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[&gt;svg]:px-3 launch-review-button"
+                                id="launch-review"
+                                type="submit"
+                                disabled=""
+                                aria-busy="true"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="15"
+                                  height="15"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="lucide lucide-rocket"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"
+                                  ></path>
+                                  <path
+                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+                                  ></path>
+                                  <path
+                                    d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+                                  ></path>
+                                  <path
+                                    d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"
+                                  ></path></svg
+                                >Reading launch options…
+                              </button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-token"
+                    hidden=""
+                    id="radix-_R_4avb_-content-token"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-wallet"
+                    hidden=""
+                    id="radix-_R_4avb_-content-wallet"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="Wallet"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-computer"
+                    hidden=""
+                    id="radix-_R_4avb_-content-computer"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="computer"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-files"
+                    hidden=""
+                    id="radix-_R_4avb_-content-files"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="files"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-treasury"
+                    hidden=""
+                    id="radix-_R_4avb_-content-treasury"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="treasury"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-usage"
+                    hidden=""
+                    id="radix-_R_4avb_-content-usage"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="usage"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-machines"
+                    hidden=""
+                    id="radix-_R_4avb_-content-machines"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="machines"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-leaderboard"
+                    hidden=""
+                    id="radix-_R_4avb_-content-leaderboard"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="leaderboard"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-guide"
+                    hidden=""
+                    id="radix-_R_4avb_-content-guide"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="How it works"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-network"
+                    hidden=""
+                    id="radix-_R_4avb_-content-network"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="Mainnet monitor"
+                  ></div>
+                  <div
+                    data-state="inactive"
+                    data-orientation="vertical"
+                    role="tabpanel"
+                    aria-labelledby="radix-_R_4avb_-trigger-activity"
+                    hidden=""
+                    id="radix-_R_4avb_-content-activity"
+                    tabindex="0"
+                    data-slot="tabs-content"
+                    class="flex-1 outline-none workspace-panel"
+                    aria-label="Session activity"
+                  ></div>
+                  <div class="terminal-status">
+                    <span
+                      >&gt; A MORE INTERESTING INTERNET
+                      <i class="block-cursor"></i></span
+                    ><span>LOAD —</span
+                    ><span
+                      >NET
+                      <!-- -->IDLE</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-brand">Coinputer</span
+                ><span class="vent-slots" aria-hidden="true"></span>
+                <div class="hardware-lights">
+                  <span title="This terminal is powered on"
+                    ><i aria-hidden="true" class="status-dot is-live"></i
+                    >POWER</span
+                  ><span title="Successful metadata and computer writes"
+                    ><i class="led disk-led"></i>DISK</span
+                  ><span title="Actual requests from this terminal"
+                    ><i aria-hidden="true" class="status-dot"></i>NETWORK</span
+                  >
+                </div>
+                <button class="sound-switch" aria-pressed="false">
+                  SOUND:
+                  <!-- -->OFF</button
+                ><button class="hardware-key" aria-label="Open system manual">
+                  ?
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="workspace-footer">
+        <span>COINPUTER / CREATOR FEES → PERSISTENT COMPUTE</span
+        ><a
+          href="https://x.com/CoinputerLaunch"
+          target="_blank"
+          rel="noreferrer"
+          >X ↗</a
+        ><a href="https://solscan.io" target="_blank" rel="noreferrer"
+          >SOLSCAN ↗</a
+        >
+      </footer>
+    </main>
+    <!--$--><!--/$-->
+    <script
+      src="/_next/static/chunks/webpack-c31690b855fa5eb4.js"
+      id="_R_"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:"$Sreact.fragment"\n2:I[7121,[],""]\n3:I[4581,[],""]\n4:I[4218,["956","static/chunks/3a91511d-79b22752a17d215f.js","477","static/chunks/477-fe762b17dae6d5f4.js","594","static/chunks/594-7469d4fb8133549b.js","71","static/chunks/71-17af1f215a63d7a5.js","960","static/chunks/960-9bc2eaa4682290f7.js","289","static/chunks/289-98acaae1063866fd.js","254","static/chunks/254-85059ee2340a0c87.js","974","static/chunks/app/page-59e156d67a8aa7e6.js"],"default"]\n5:I[484,[],"OutletBoundary"]\n6:"$Sreact.suspense"\n8:I[484,[],"ViewportBoundary"]\na:I[484,[],"MetadataBoundary"]\nc:I[7123,[],"default",1]\n:HL["/_next/static/css/953d0668c7d9234b.css","style"]\n:HL["/_next/static/css/fc99c8d64092cf78.css","style"]\n0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/953d0668c7d9234b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"error-workstation","children":["$","div",null,{"className":"crt-machine","children":[["$","div",null,{"className":"bezel-top","children":"COINPUTER / CONNECTION DIAGNOSTICS"}],["$","div",null,{"className":"crt-recess","children":["$","div",null,{"className":"crt-screen","children":[["$","div",null,{"className":"window-chrome","children":"coinputer://unknown-host"}],["$","div",null,{"className":"workspace-panel","children":[["$","h1",null,{"children":"CONNECTION FAILED."}],["$","p",null,{"children":"HOST NOT FOUND. / ERR 404"}],["$","p",null,{"children":["\u003e cd ..",["$","span",null,{"className":"block-cursor"}]]}],["$","a",null,{"href":"/","children":"[ RETURN TO NETWORK ↵ ]"}]]}]]}]}],["$","div",null,{"className":"bezel-bottom","children":["$","span",null,{"className":"bezel-brand","children":"Coinputer"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[["$","$L4",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc99c8d64092cf78.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$L9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$Lb"}]}]}],null]}],false]],"m":"$undefined","G":["$c",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"Oa2sGaL4gmrC9FTnYf1-P"}\n9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\nd:I[6869,[],"IconMark"]\n7:null\nb:[["$","title","0",{"children":"Coinputer"}],["$","meta","1",{"name":"description","content":"Coinputer mainnet workspace. Read real Solana token and wallet data, and learn how creator fees can fund community computers."}],["$","link","2",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","3",{"rel":"icon","href":"/favicon.png"}],["$","$Ld","4",{}]]\n',
+      ]);
+    </script>
+  </body>
+</html>
