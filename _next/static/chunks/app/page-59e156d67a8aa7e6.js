@@ -5854,10 +5854,10 @@
                   children: "TG ↗",
                 }),
                 (0, n.jsx)("a", {
-                  href: "https://solscan.io",
+                  href: "https://solscan.io/token/gogxD5VKgKFy5e3nFLyJQFSMntdYs6U64WYWwZ6pump",
                   target: "_blank",
                   rel: "noreferrer",
-                  children: "SOLSCAN ↗",
+                  children: "CA gogxD5VKgKFy5e3nFLyJQFSMntdYs6U64WYWwZ6pump ↗",
                 }),
               ],
             }),
