@@ -5842,10 +5842,16 @@
                   children: "COINPUTER / CREATOR FEES → PERSISTENT COMPUTE",
                 }),
                 (0, n.jsx)("a", {
-                  href: "https://x.com/CoinputerLaunch",
+                  href: "https://x.com/coinputer_x",
                   target: "_blank",
                   rel: "noreferrer",
                   children: "X ↗",
+                }),
+                (0, n.jsx)("a", {
+                  href: "https://t.me/coinputer_tg",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  children: "TG ↗",
                 }),
                 (0, n.jsx)("a", {
                   href: "https://solscan.io",
